@@ -8,6 +8,8 @@ class Couchstore < Formula
     depends_on :autoconf => :build
     depends_on :libtool => :build
     depends_on 'snappy' => :build
+    depends_on 'icu4c' => :build
+    depends_on 'v8' => :build
 
     def install
         system "echo \"m4_define([VERSION_NUMBER], [HEAD])\" > m4/version.m4"
